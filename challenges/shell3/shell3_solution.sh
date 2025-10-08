@@ -1,0 +1,1 @@
+egrep "class=\"num-votes\"|class=\"command\"" | sed -r 's/.*<div class=\"command\">(.*)<\/div>/\1/g' | sed -r 's/.*<div class=\"num-votes\"[^>]*>(.*)<\/div>/\1\n/g' | awk 'BEGIN{FS="\n";RS="\n\n";}{if($2 >= 5){print $1;}}'
