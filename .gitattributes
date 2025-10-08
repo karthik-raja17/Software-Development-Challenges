@@ -1,2 +1,9 @@
-echo '* text=auto' > .gitattributes
-echo '*.sh linguist-language=Shell' >> .gitattributes
+# Normalize line endings
+* text=auto
+
+# Force Bash detection
+*.sh linguist-language=Shell
+*.bash linguist-language=Shell
+
+# Ignore HTML files from language stats
+*.html linguist-documentation
