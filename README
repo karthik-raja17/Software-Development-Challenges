@@ -70,6 +70,7 @@ This repository contains solutions to a series of shell scripting and system adm
 └── solutions/                  # All solution files
 ```
 
+
 ## Technical Skills Demonstrated
 - **Shell Scripting**: Bash, sh, and command-line utilities
 - **Text Processing**: sed, awk, grep, cut, tr, and other Unix filters
