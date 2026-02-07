@@ -1,64 +1,42 @@
-# 🛠️ SoftDev Challenges - Solutions Repository
+SoftDev Challenges - Solutions Repository
+=========================================
 
-## 📝 Overview
-This repository contains solutions to a series of shell scripting and system administration challenges focused on text processing, log analysis, automation, and file system management using Unix command-line tools.
+This repository contains solutions to a series of shell scripting and system administration challenges focused on text processing, log analysis, and automation using Unix tools.
 
-## 🚀 Challenges Completed
+Completed Challenges
+--------------------
 
 ### 1. CSV Field Separator Conversion
-* **Problem**: Convert a CSV file with quoted fields containing commas to pipe-delimited format while preserving the structure.
-* **Key Concepts**: Handling quoted fields, text stream processing, and field separator conversion.
+* **Goal**: Convert CSV with quoted fields to pipe-delimited format.
+* **Skills**: Text stream processing, field separator logic.
 
 ### 2. Dynamic Makefile for Monthly Builds
-* **Problem**: Create a Makefile that automatically builds an application with different C files each month based on the current system date.
-* **Key Concepts**: Makefile automation, dynamic target generation, and dependency management.
+* **Goal**: Create a Makefile that builds different C files based on the current month.
+* **Skills**: Build automation, dynamic target generation.
 
 ### 3. CommandLineFu HTML Parser
-* **Problem**: Parse HTML from CommandLineFu.com to extract and display only commands with 5 or more votes.
-* **Key Concepts**: HTML parsing with CLI tools, regex-based filtering, and text extraction.
+* **Goal**: Extract high-voted commands from HTML source code.
+* **Skills**: Regex, command-line HTML parsing.
 
 ### 4. SSH Brute Force Detection
-* **Problem**: Analyze authentication logs to identify IP addresses with more failed than successful login attempts, but at least one success.
-* **Key Concepts**: Log file analysis, pattern matching with `awk`/`grep`, and security monitoring.
+* **Goal**: Analyze authentication logs to detect failed login patterns.
+* **Skills**: `awk`, `grep`, security log analysis.
 
 ### 5. Network Connection Geolocation
-* **Problem**: Filter network connections by timestamp and subnet, then resolve IP addresses to countries for incident investigation.
-* **Key Concepts**: Subnet filtering, IP geolocation lookup, and `geoiplookup` integration.
+* **Goal**: Resolve IP addresses to countries for incident investigation.
+* **Skills**: `geoiplookup`, subnet filtering.
 
 ### 6. Automated Directory Compression
-* **Problem**: Compress directories that don't contain any files accessed in the last month to save disk space.
-* **Key Concepts**: File system traversal, access time (`atime`) checking, and recursive processing with `tar`.
+* **Goal**: Automatically compress old, unused directories.
+* **Skills**: File system traversal, `atime` checking, `tar`.
 
----
+Technical Skills
+----------------
+* **Shell Scripting**: Bash, POSIX sh.
+* **Unix Filters**: sed, awk, grep, cut, tr.
+* **Automation**: Makefile development, cron-style logic.
 
-## 📂 Repository Structure
-```text
-├── README.md                # Project documentation
-├── challenge1/              # CSV conversion solution
-├── challenge2/              # Dynamic Makefile
-├── challenge3/              # HTML parser solution
-├── challenge4/              # SSH log analyzer
-├── challenge5/              # Network geolocation analyzer
-├── challenge6/              # Directory compression script
-└── solutions/               # Compiled solution scripts
-
-```
-
-## 🛠️ Technical Skills Demonstrated
-
-* **Shell Scripting**: Advanced Bash and POSIX `sh` utilities.
-* **Text Processing**: Deep knowledge of `sed`, `awk`, `grep`, `cut`, and `tr`.
-* **System Administration**: Log analysis, security monitoring, and file system automation.
-* **Build Systems**: Makefile development and dependency management.
-* **Regex**: Complex pattern matching for data transformation.
-
-## ⚙️ Prerequisites
-
-* Unix-like environment (Linux, macOS, WSL)
-* Standard utilities: `grep`, `sed`, `awk`, `find`, `tar`
-* `geoiplookup` (for Challenge 5)
-* `gcc` (for Challenge 2)
-
-## 👤 Author
-
-Solutions completed as part of the **SoftDev Challenges**, focusing on practical system administration and shell automation skills.
+Repository Structure
+--------------------
+* `challenge1/` to `challenge6/`: Individual solution directories.
+* `solutions/`: Compiled scripts.
