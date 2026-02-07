@@ -1,102 +1,64 @@
-# SoftDev Challenges - Solutions Repository
+# 🛠️ SoftDev Challenges - Solutions Repository
 
-## Overview
+## 📝 Overview
 This repository contains solutions to a series of shell scripting and system administration challenges focused on text processing, log analysis, automation, and file system management using Unix command-line tools.
 
-## Challenges Completed
+## 🚀 Challenges Completed
 
 ### 1. CSV Field Separator Conversion
-**Problem**: Convert a CSV file with quoted fields containing commas to pipe-delimited format while preserving the structure.
-
-**Key Concepts**:
-- Handling quoted fields with embedded delimiters
-- Text stream processing
-- Field separator conversion
+* **Problem**: Convert a CSV file with quoted fields containing commas to pipe-delimited format while preserving the structure.
+* **Key Concepts**: Handling quoted fields, text stream processing, and field separator conversion.
 
 ### 2. Dynamic Makefile for Monthly Builds
-**Problem**: Create a Makefile that automatically builds an application with different C files each month based on the current month.
-
-**Key Concepts**:
-- Makefile automation
-- Dynamic target generation
-- Date-based file selection
-- Dependency management
+* **Problem**: Create a Makefile that automatically builds an application with different C files each month based on the current system date.
+* **Key Concepts**: Makefile automation, dynamic target generation, and dependency management.
 
 ### 3. CommandLineFu HTML Parser
-**Problem**: Parse HTML from CommandLineFu.com to extract and display only commands with 5 or more votes.
-
-**Key Concepts**:
-- HTML parsing with command-line tools
-- Text extraction and filtering
-- Regular expressions in shell
-- Vote threshold filtering
+* **Problem**: Parse HTML from CommandLineFu.com to extract and display only commands with 5 or more votes.
+* **Key Concepts**: HTML parsing with CLI tools, regex-based filtering, and text extraction.
 
 ### 4. SSH Brute Force Detection
-**Problem**: Analyze authentication logs to identify IP addresses with more failed than successful login attempts, but at least one success.
-
-**Key Concepts**:
-- Log file analysis
-- Pattern matching with grep/awk
-- Statistical analysis of login attempts
-- Security monitoring
+* **Problem**: Analyze authentication logs to identify IP addresses with more failed than successful login attempts, but at least one success.
+* **Key Concepts**: Log file analysis, pattern matching with `awk`/`grep`, and security monitoring.
 
 ### 5. Network Connection Geolocation
-**Problem**: Filter network connections by timestamp and subnet, then resolve IP addresses to countries for incident investigation.
-
-**Key Concepts**:
-- Log filtering by time and network range
-- IP geolocation lookup
-- Text processing with geoiplookup
-- Connection analysis
+* **Problem**: Filter network connections by timestamp and subnet, then resolve IP addresses to countries for incident investigation.
+* **Key Concepts**: Subnet filtering, IP geolocation lookup, and `geoiplookup` integration.
 
 ### 6. Automated Directory Compression
-**Problem**: Compress directories that don't contain any files accessed in the last month to save disk space.
+* **Problem**: Compress directories that don't contain any files accessed in the last month to save disk space.
+* **Key Concepts**: File system traversal, access time (`atime`) checking, and recursive processing with `tar`.
 
-**Key Concepts**:
-- File system traversal
-- Access time (atime) checking
-- Conditional directory compression with tar
-- Recursive directory processing
+---
 
-## Repository Structure
-```
-├── README.md                   # This file
-├── challenge1/                 # CSV conversion solution
-├── challenge2/                 # Dynamic Makefile
-├── challenge3/                 # HTML parser solution
-├── challenge4/                 # SSH log analyzer
-├── challenge5/                 # Network geolocation analyzer
-├── challenge6/                 # Directory compression script
-└── solutions/                  # All solution files
+## 📂 Repository Structure
+```text
+├── README.md                # Project documentation
+├── challenge1/              # CSV conversion solution
+├── challenge2/              # Dynamic Makefile
+├── challenge3/              # HTML parser solution
+├── challenge4/              # SSH log analyzer
+├── challenge5/              # Network geolocation analyzer
+├── challenge6/              # Directory compression script
+└── solutions/               # Compiled solution scripts
+
 ```
 
+## 🛠️ Technical Skills Demonstrated
 
-## Technical Skills Demonstrated
-- **Shell Scripting**: Bash, sh, and command-line utilities
-- **Text Processing**: sed, awk, grep, cut, tr, and other Unix filters
-- **System Administration**: Log analysis, file system management, process automation
-- **Makefile Development**: Build automation and dependency management
-- **Regular Expressions**: Pattern matching for text extraction and transformation
-- **Data Analysis**: Log parsing, statistical calculations, and reporting
+* **Shell Scripting**: Advanced Bash and POSIX `sh` utilities.
+* **Text Processing**: Deep knowledge of `sed`, `awk`, `grep`, `cut`, and `tr`.
+* **System Administration**: Log analysis, security monitoring, and file system automation.
+* **Build Systems**: Makefile development and dependency management.
+* **Regex**: Complex pattern matching for data transformation.
 
-## Usage
-Each challenge solution is self-contained. To test any solution:
+## ⚙️ Prerequisites
 
-1. Navigate to the specific challenge directory
-2. Follow the individual instructions in each solution file
-3. Test with provided or sample input files
+* Unix-like environment (Linux, macOS, WSL)
+* Standard utilities: `grep`, `sed`, `awk`, `find`, `tar`
+* `geoiplookup` (for Challenge 5)
+* `gcc` (for Challenge 2)
 
-## Prerequisites
-- Unix-like operating system (Linux, macOS, WSL)
-- Standard Unix utilities (grep, sed, awk, find, tar, etc.)
-- `geoiplookup` for Challenge 5 (install with `geoip-bin` package)
-- `gcc` for Challenge 2 Makefile testing
+## 👤 Author
 
-## Notes
-- All solutions use only command-line tools and shell scripting (no Python/Perl unless specified)
-- Solutions are designed to work with pipes and standard input/output
-- Each solution includes error handling appropriate for the task
-- Code follows Unix philosophy of small, composable tools
-
-## Author
-Solutions completed as part of the SoftDev challenges server assignments, focusing on practical system administration and automation skills.
+Solutions completed as part of the **SoftDev Challenges**, focusing on practical system administration and shell automation skills.
