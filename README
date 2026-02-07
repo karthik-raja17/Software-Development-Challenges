@@ -1,39 +1,101 @@
-Welcome to the SoftDev challenges server!
-Please, read this file VERY carefully
+# SoftDev Challenges - Solutions Repository
 
-Rules of the system:
+## Overview
+This repository contains solutions to a series of shell scripting and system administration challenges focused on text processing, log analysis, automation, and file system management using Unix command-line tools.
 
-1. In your home you find a directory called "challenges"
-   Inside, you have one subdirectory for each assignment.
-   However, at the beginning you will not have the permissions
-   to access all of them. Certain challenges will be open only
-   after you correctly solve the other ones.
+## Challenges Completed
 
-2. You can check the game progress using the "game" command.
-   Just run "game" without paramenters to get a short description
-   of how to use it.
+### 1. CSV Field Separator Conversion
+**Problem**: Convert a CSV file with quoted fields containing commas to pipe-delimited format while preserving the structure.
 
-3. You can submit a solution for a challenge by using the
-   "submit" command. Just run "submit" without parameters to 
-   get a short description of how to use it.
+**Key Concepts**:
+- Handling quoted fields with embedded delimiters
+- Text stream processing
+- Field separator conversion
 
-4. Everything you do and everything you store in this machine 
-   can and will be monitored. If you abuse the system or if you start 
-   using this server for weird stuff, your account
-   will be suspended and you will fail the homework (and the class)
+### 2. Dynamic Makefile for Monthly Builds
+**Problem**: Create a Makefile that automatically builds an application with different C files each month based on the current month.
 
-5. If you find a bug in the system, report it to me as soon as
-   possible. Do NOT take advantage of it.
-   If you intentially cause a DOS or bother other users you 
-   will face my anger.
+**Key Concepts**:
+- Makefile automation
+- Dynamic target generation
+- Date-based file selection
+- Dependency management
 
-6. Cheating is forbidden. Hacking the system is forbidden 
-   as well (this is not a security class).
-   Copying the solution from other students is even more forbidden.
+### 3. CommandLineFu HTML Parser
+**Problem**: Parse HTML from CommandLineFu.com to extract and display only commands with 5 or more votes.
 
-7. Nothing else. I just wanted to have seven rules
+**Key Concepts**:
+- HTML parsing with command-line tools
+- Text extraction and filtering
+- Regular expressions in shell
+- Vote threshold filtering
 
-Now go, play, have fun, and try to learn something along the way.
+### 4. SSH Brute Force Detection
+**Problem**: Analyze authentication logs to identify IP addresses with more failed than successful login attempts, but at least one success.
 
--- 
- root
+**Key Concepts**:
+- Log file analysis
+- Pattern matching with grep/awk
+- Statistical analysis of login attempts
+- Security monitoring
+
+### 5. Network Connection Geolocation
+**Problem**: Filter network connections by timestamp and subnet, then resolve IP addresses to countries for incident investigation.
+
+**Key Concepts**:
+- Log filtering by time and network range
+- IP geolocation lookup
+- Text processing with geoiplookup
+- Connection analysis
+
+### 6. Automated Directory Compression
+**Problem**: Compress directories that don't contain any files accessed in the last month to save disk space.
+
+**Key Concepts**:
+- File system traversal
+- Access time (atime) checking
+- Conditional directory compression with tar
+- Recursive directory processing
+
+## Repository Structure
+```
+├── README.md                   # This file
+├── challenge1/                 # CSV conversion solution
+├── challenge2/                 # Dynamic Makefile
+├── challenge3/                 # HTML parser solution
+├── challenge4/                 # SSH log analyzer
+├── challenge5/                 # Network geolocation analyzer
+├── challenge6/                 # Directory compression script
+└── solutions/                  # All solution files
+```
+
+## Technical Skills Demonstrated
+- **Shell Scripting**: Bash, sh, and command-line utilities
+- **Text Processing**: sed, awk, grep, cut, tr, and other Unix filters
+- **System Administration**: Log analysis, file system management, process automation
+- **Makefile Development**: Build automation and dependency management
+- **Regular Expressions**: Pattern matching for text extraction and transformation
+- **Data Analysis**: Log parsing, statistical calculations, and reporting
+
+## Usage
+Each challenge solution is self-contained. To test any solution:
+
+1. Navigate to the specific challenge directory
+2. Follow the individual instructions in each solution file
+3. Test with provided or sample input files
+
+## Prerequisites
+- Unix-like operating system (Linux, macOS, WSL)
+- Standard Unix utilities (grep, sed, awk, find, tar, etc.)
+- `geoiplookup` for Challenge 5 (install with `geoip-bin` package)
+- `gcc` for Challenge 2 Makefile testing
+
+## Notes
+- All solutions use only command-line tools and shell scripting (no Python/Perl unless specified)
+- Solutions are designed to work with pipes and standard input/output
+- Each solution includes error handling appropriate for the task
+- Code follows Unix philosophy of small, composable tools
+
+## Author
+Solutions completed as part of the SoftDev challenges server assignments, focusing on practical system administration and automation skills.
